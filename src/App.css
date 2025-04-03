@@ -1,38 +1,70 @@
-.App {
+* {
+  transition: all 0.3s ease; /* Smooth transition for all elements */
+}
+
+.app h2 {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.app details {
+  /* Ensure details elements are centered */
+  text-align: center;
+  margin: 20px auto; /* Center the details block */
+  padding: 10px;
+  border: 1px solid #ccc; /* Optional: add a border for visibility */
+  border-radius: 5px; /* Optional: rounded corners */
+  font-size: 1.6em;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.app details summary {
+  cursor: pointer; /* Make it clear that the summary is clickable */
+  font-weight: bold; /* Optional: make the summary text bold */
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.app details[open] {
+  /* Optional: style for when the details are open */
+  background-color: #f0f8ff; /* Light background when open */
 }
 
-.App-link {
-  color: #61dafb;
+.app details p {
+  margin: 10px 0; /* Add some spacing around the paragraph inside details */
+  font-size: 1.4em;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.app details ol {
+  padding-left: 20px; /* Ensure the list inside details is indented */
+  margin: 10px 0; /* Add some spacing around the ordered list */
+}
+
+.app details ol li {
+  margin-bottom: 5px; /* Add spacing between list items for readability */
+  border-bottom: 2px solid #eee; /* Optional: add a bottom border to each list item for separation */
+}
+
+.app table {
+  width: 100%; /* Make the table take full width of its container */
+  border-collapse: collapse; /* Ensure no double borders */
+  margin: 20px auto; /* Center the table */
+}
+
+.app table, .app th, .app td {
+  border: 1px solid #ccc; /* Add borders to the table and cells */
+  font-size: 1.2em; /* Increase font size for better readability */
+}
+
+a {
+  color: #007bff; /* Link color */
+  text-decoration: none; /* Remove underline from links */
+}
+
+a:hover {
+  text-decoration: underline; /* Underline links on hover for better UX */
+}
+
+.full-link {
+  display: block; /* Make the full link a block element for better click area */
+  margin: 20px auto; /* Center the full link */
+  padding: 10px;
+  font-size: .6em;
+  text-align: center; /* Center the text */
 }
