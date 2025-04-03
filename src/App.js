@@ -5,7 +5,7 @@ function App() {
   return (
     <div className="app">
       <h2>GovEx Developer Onboarding Checklist</h2>
-      <details>
+      {/* <details>
         <summary>Administrative Tools</summary>
         <ol>
           <li>
@@ -15,7 +15,7 @@ function App() {
             <p>We use Slack for instant messaging. Download and install it <a href="https://slack.com/downloads/mac">here</a>.</p>
           </li>
         </ol>
-      </details>
+      </details> */}
       <details>
         <summary>Development Tools</summary>
         <ol>
